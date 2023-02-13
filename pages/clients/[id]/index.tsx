@@ -10,7 +10,7 @@ const ClientsProjectsPage = () => {
         //load data...
         // router.push('/clients/max/projectA').then(r => console.log(r))
         router.push({
-            pathname: '/clients/[id]/[clientprojectsid]',
+            pathname: '/clients/[eventId]/[clientprojectsid]',
             query: {id: router.query?.id, clientprojectsid: 'projectA'}
         }).then(r => console.log(r))
     }
