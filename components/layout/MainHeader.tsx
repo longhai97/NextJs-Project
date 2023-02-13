@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import classes from './MainHeader.module.css'
 
-const MainHeader: React.FC<React.ReactElement> = () => {
+const MainHeader: React.FC = () => {
     return (
         <React.Fragment>
             <header className={classes.header}>

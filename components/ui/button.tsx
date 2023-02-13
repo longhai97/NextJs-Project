@@ -6,7 +6,7 @@ import classes from './button.module.css'
 type Props = {
     link?: string
     children: React.ReactNode
-    onClick: () => void
+    onClick?: () => void
 };
 
 const Button = (props: Props) => {
