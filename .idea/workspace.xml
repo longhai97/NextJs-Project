@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/pages/[uid].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/last-sales.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/user-profile.tsx" afterDir="false" />
+    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="Prepare for using &quot;useSWR&quot; hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[pid].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/[pid].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/last-sales.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/last-sales.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676273401892</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Prepare for using &quot;useSWR&quot; hook">
+      <created>1678272040570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678272040570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +221,7 @@
     <MESSAGE value="Finish filtered event page programmatically" />
     <MESSAGE value="Extracting Data on the Catch-All Page" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Prepare for using &quot;useSWR&quot; hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare for using &quot;useSWR&quot; hook" />
   </component>
 </project>
