@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useRouter} from "next/router";
 import {getFilteredEvents} from "@/dummy-data";
-import EventList from '../../../components/events/EventList';
+import EventList from '../../components/events/EventList';
 import ResultsTitle from "@/components/events/ResultsTitle";
 import Button from "@/components/ui/button";
 import ErrorAlert from "@/components/ui/errorAlert";
