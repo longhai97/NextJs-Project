@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {useRouter} from 'next/router'
+import {GetStaticProps} from 'next'
 import {getEventById} from "@/dummy-data";
 import EventSummary from "@/components/event-detail/EventSummary"
 import EventLogistics from "@/components/event-detail/EventLogistics"
@@ -28,6 +29,15 @@ function EventDetailPage() {
             </EventContent>
         </>
     );
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+
+    return {
+        props: {
+
+        }
+    }
 }
 
 export default EventDetailPage;

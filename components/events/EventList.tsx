@@ -2,7 +2,7 @@ import React, {Key} from 'react';
 import EventItem from "@/components/events/EventItem";
 import classes from './EventList.module.css'
 
-type Event = { id: string, title: string, description: string, location: string, date: string, image: string, isFeatured: boolean }
+export type Event = { id: string, title: string, description: string, location: string, date: string, image: string, isFeatured: boolean }
 type Props = {
     items: Event[] | undefined
 };
