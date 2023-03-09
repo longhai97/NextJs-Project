@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="Prepare for using &quot;useSWR&quot; hook">
+    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="fix error of fetch data when use getStaticProp">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/last-sales.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/last-sales.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,26 +88,27 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tlhai/Desktop/nextjs-app/components/ui",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
-    "ts.external.directory.path": "/Users/tlhai/Desktop/nextjs-app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tlhai/Desktop/nextjs-app/components/ui&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/tlhai/Desktop/nextjs-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/ui" />
@@ -156,6 +156,7 @@
       <workItem from="1676255271703" duration="12014000" />
       <workItem from="1676874492029" duration="8596000" />
       <workItem from="1677470025980" duration="609000" />
+      <workItem from="1678330833439" duration="5720000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675741826644</created>
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678272040570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cline side fetching data use useSWR">
+      <created>1678273101839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678273101839</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +230,8 @@
     <MESSAGE value="Extracting Data on the Catch-All Page" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Prepare for using &quot;useSWR&quot; hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare for using &quot;useSWR&quot; hook" />
+    <MESSAGE value="cline side fetching data use useSWR" />
+    <MESSAGE value="fix error of fetch data when use getStaticProp" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error of fetch data when use getStaticProp" />
   </component>
 </project>
