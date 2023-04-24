@@ -6,6 +6,7 @@ import EventSummary from "@/components/event-detail/EventSummary"
 import EventLogistics from "@/components/event-detail/EventLogistics"
 import EventContent from "@/components/event-detail/EventContent"
 import ErrorAlert from "@/components/ui/errorAlert";
+import {getAllEvents} from "@/helpers/api-util";
 
 function EventDetailPage() {
     const router = useRouter()
@@ -32,11 +33,10 @@ function EventDetailPage() {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-
+    const events = await getAllEvents();
+    // const paths = events.map()
     return {
-        props: {
-
-        }
+        props: {}
     }
 }
 
