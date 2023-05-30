@@ -1,49 +1,74 @@
-import {HomePageProps} from '@/type'
-import path from 'path';
-import fs from 'fs/promises';
-import Link from "next/link";
+import React, { useRef, useState } from "react";
 
-const HomePage = (props: HomePageProps) => {
-    const {products} = props
-    return (
-        <>
-            <ul>
-                {products.map((product) => (
-                    <li key={product.id}>
-                        <Link href={`/products/${product.id}`}>
-                            {product.title}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </>
-    )
-}
+type FeedbackItem = {
+  id: string;
+  email?: string;
+  text: string;
+};
 
-export async function getStaticProps(context: any) {
-    console.log('RE-Generating...')
+function HomePage() {
+  const [feedbackItems, setFeedbackItems] = useState<FeedbackItem[]>([]);
 
-    const filePath = path.join(process.cwd(), 'data', 'dummy-backend.json');
-    const jsonData = await fs.readFile(filePath);
-    const data = JSON.parse(jsonData.toString());
-    if (!data) {
-        return {
-            redirect: {
-                description: '/no-data'
-            }
-        }
-    }
+  const emailInputRef = useRef<HTMLInputElement | null>(null);
+  const feedbackInputRef = useRef<HTMLTextAreaElement | null>(null);
 
-    if (data.products.length === 0) {
-        return {notFound: true}
-    }
+  const submitFormHandler = (event:any) => {
+    event.preventDefault();
+    if (!emailInputRef.current || !feedbackInputRef.current) return;
+    const enteredEmail = emailInputRef.current.value;
+    const enteredFeedback = feedbackInputRef.current.value;
 
-    return {
-        props: {
-            products: data.products
-        },
-        revalidate: 10,
+    const requestBody = {
+      email: enteredEmail,
+      text: enteredFeedback,
     };
+
+    fetch("/api/feedback", {
+      method: "POST",
+      body: JSON.stringify(requestBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => console.log('RESPONSE__',response.json()))
+      .then((data) => console.log("LOGS__", data))
+      .catch((error) => console.log("ERROR__", error));
+  };
+
+  function loadFeedbackHandler() {
+    fetch("/api/feedback")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data?.feedback) {
+          setFeedbackItems(data.feedback);
+        } else {
+          setFeedbackItems([]);
+        }
+      });
+  }
+
+  return (
+    <div>
+      <h1>The Home Page</h1>
+      <form onSubmit={submitFormHandler}>
+        <div>
+          <label htmlFor={"email"}>Your Email Address</label>
+          <input type="email" name="email" ref={emailInputRef} />
+        </div>
+        <div>
+          <label htmlFor={"feedback"}>Your Feedback</label>
+          <textarea id={"feedback"} rows={5} ref={feedbackInputRef}></textarea>
+        </div>
+        <button>Send Feedback</button>
+      </form>
+      <button onClick={loadFeedbackHandler}>Load Feedback</button>
+      <ul>
+        {feedbackItems.map((item) => (
+          <li key={item.id}>{item.text}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default HomePage;
