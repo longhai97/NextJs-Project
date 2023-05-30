@@ -1,10 +1,10 @@
-import React, {Key} from 'react';
+import React from 'react';
 import EventItem from "@/components/events/EventItem";
 import classes from './EventList.module.css'
 
 export type Event = { id: string, title: string, description: string, location: string, date: string, image: string, isFeatured: boolean }
 type Props = {
-    items: Event[] | undefined
+    items: Event[] | null
 };
 
 function EventList(props: Props) {
