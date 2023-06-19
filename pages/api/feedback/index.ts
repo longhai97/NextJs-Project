@@ -2,6 +2,15 @@ import { NextApiRequest, NextApiResponse } from "next";
 import fs                                  from "fs";
 import path                                from "path";
 
+export const buildFeedbackPath = () => {
+  return path.join(process.cwd(), "data", "feedback.json");
+}
+
+export const extractFeedback = (filePath: string) => {
+  const fileData = fs.readFileSync(filePath)
+  return JSON.parse(fileData.toString());
+}
+
 const handler = (request: NextApiRequest,
                  response: NextApiResponse) => {
   if (request.method === "POST") {
@@ -14,17 +23,16 @@ const handler = (request: NextApiRequest,
       text: feedbackText,
     }
     //store that in database or in a file
-    const filePath = path.join(process.cwd(), "data", "feedback.json");
-    console.log('PATH_', filePath)
-    const fileData = fs.readFileSync(filePath)
-    const data     = JSON.parse(fileData.toString());
-
+    const filePath    = buildFeedbackPath();
+    const data        = extractFeedback(filePath);
     data.push(newFeedback);
     fs.writeFileSync(filePath, JSON.stringify(data));
     response?.status(201).json({ message: "Success!", feedback: newFeedback });
 
   } else {
-    response?.status(200).json({ message: "This works!" });
+    const filePath = buildFeedbackPath();
+    const data     = extractFeedback(filePath);
+    response?.status(200).json({ feedback: data });
   }
 }
 

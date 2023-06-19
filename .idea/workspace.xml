@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="fix error of fetch data when use getStaticProp">
-      <change afterPath="$PROJECT_DIR$/pages/api/feedback.ts" afterDir="false" />
+    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/api/feedback/[feedbackId].ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/feedback/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dummy-backend.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/feedback.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/404.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[uid].tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/feedback.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/feedback.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/feedback.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/feedback/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/last-sales.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/[pid].tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/user-profile.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +22,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -101,7 +96,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/haiboo/Desktop/NextJs-Project/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -120,11 +115,11 @@
       <recent name="$PROJECT_DIR$/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api/feedback" />
       <recent name="$PROJECT_DIR$/pages/products" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/components/events" />
       <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -162,6 +157,9 @@
       <workItem from="1676874492029" duration="8596000" />
       <workItem from="1677470025980" duration="609000" />
       <workItem from="1678330833439" duration="5720000" />
+      <workItem from="1686625753802" duration="4283000" />
+      <workItem from="1687144867999" duration="346000" />
+      <workItem from="1687145285099" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675741826644</created>
@@ -212,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678273101839</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create API ROUTES for app ( API POST )">
+      <created>1685442061654</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685442061654</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +242,25 @@
     <MESSAGE value="Prepare for using &quot;useSWR&quot; hook" />
     <MESSAGE value="cline side fetching data use useSWR" />
     <MESSAGE value="fix error of fetch data when use getStaticProp" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error of fetch data when use getStaticProp" />
+    <MESSAGE value="create API ROUTES for app ( API POST )" />
+    <option name="LAST_COMMIT_MESSAGE" value="create API ROUTES for app ( API POST )" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/api/feedback/index.ts</url>
+          <line>4</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/api/feedback/index.ts</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
