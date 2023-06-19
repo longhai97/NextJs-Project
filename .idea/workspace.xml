@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/api/feedback/[feedbackId].ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/feedback/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/feedback.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/feedback.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/feedback.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/feedback/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +74,8 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -159,7 +154,7 @@
       <workItem from="1678330833439" duration="5720000" />
       <workItem from="1686625753802" duration="4283000" />
       <workItem from="1687144867999" duration="346000" />
-      <workItem from="1687145285099" duration="1382000" />
+      <workItem from="1687145285099" duration="1799000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675741826644</created>
@@ -217,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685442061654</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finish Section 8: Adding backend code with api routes">
+      <created>1687147747571</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687147747571</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +245,8 @@
     <MESSAGE value="cline side fetching data use useSWR" />
     <MESSAGE value="fix error of fetch data when use getStaticProp" />
     <MESSAGE value="create API ROUTES for app ( API POST )" />
-    <option name="LAST_COMMIT_MESSAGE" value="create API ROUTES for app ( API POST )" />
+    <MESSAGE value="finish Section 8: Adding backend code with api routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish Section 8: Adding backend code with api routes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
