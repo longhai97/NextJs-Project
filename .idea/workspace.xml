@@ -4,7 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="fix error of fetch data when use getStaticProp" />
+    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="fix error of fetch data when use getStaticProp">
+      <change afterPath="$PROJECT_DIR$/components/input/comment-list.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/comment-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/comments.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/comments.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/new-comment.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/new-comment.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/newsletter-registration.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/input/newsletter-registration.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/posts-util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/contact.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/contact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/posts/[slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/posts/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/posts/getting-started-with-nextjs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/posts/mastering-javascript.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/getting-started-with-nextjs/getting-started-nextjs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/getting-started-with-nextjs/nextjs-file-based-routing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/mastering-javascript/mastering-js-thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/site/max.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/contact/contact-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/contact/contact-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home-page/featured-posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-page/featured-posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home-page/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-page/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/main-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/main-navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/posts/all-posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/all-posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/posts/post-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/post-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/posts/posts-grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/posts-grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/notification.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +120,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/tlhai/Desktop/nextjs-app/components/ui",
+    "last_opened_file_path": "/Users/haiboo/Desktop/NextJs-Project/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -101,15 +137,16 @@
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.rcb.reactComponents" value="true" />
-        <entry key="com.haulmont.rcb.reactInspector" value="true" />
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
       </map>
     </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/ui" />
       <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/components/ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages/products" />
@@ -210,6 +247,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pages/_app.js" />
+        <option value="$PROJECT_DIR$/pages/index.js" />
+        <option value="$PROJECT_DIR$/pages/_document.js" />
+        <option value="$PROJECT_DIR$/pages/_app.js" />
+        <option value="$PROJECT_DIR$/pages/index.js" />
+        <option value="$PROJECT_DIR$/pages/_document.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
