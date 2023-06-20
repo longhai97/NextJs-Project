@@ -6,7 +6,8 @@ function NewComment(props:any) {
 
   const emailInputRef = useRef<HTMLInputElement>(null);
   const nameInputRef = useRef<HTMLInputElement>(null);
-  const commentInputRef = useRef<HTMLInputElement>(null);
+  const commentInputRef = useRef<HTMLTextAreaElement>(null);
+
 
   function sendCommentHandler(event:any) {
     event.preventDefault();
@@ -49,7 +50,7 @@ function NewComment(props:any) {
       </div>
       <div className={classes.control}>
         <label htmlFor='comment'>Your comment</label>
-        <textarea id='comment' rows='5' ref={commentInputRef}></textarea>
+        <textarea id='comment' rows={5} ref={commentInputRef}></textarea>
       </div>
       {isInvalid && <p>Please enter a valid email address and comment!</p>}
       <button>Submit</button>

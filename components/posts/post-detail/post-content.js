@@ -54,8 +54,9 @@ function PostContent(props) {
         <SyntaxHighlighter
           style={atomDark}
           language={language}
-          children={value}
-        />
+        >
+          {value}
+        </SyntaxHighlighter>
       );
     },
   };

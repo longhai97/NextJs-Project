@@ -1,8 +1,14 @@
 import ReactDOM from 'react-dom';
 
 import classes from './notification.module.css';
+import React from "react";
 
-function Notification(props: { title: string; message: string; status: any; }) {
+type NotificationProps = {
+  title: string;
+  message: string;
+  status: 'success' | 'error';
+};
+const Notification:React.FC<NotificationProps> = (props) => {
   const { title, message, status } = props;
 
   let statusClasses = '';
@@ -23,7 +29,7 @@ function Notification(props: { title: string; message: string; status: any; }) {
       <h2>{title}</h2>
       <p>{message}</p>
     </div>,
-    document.getElementById('notifications')
+    document.getElementById('notifications')!
   );
 }
 

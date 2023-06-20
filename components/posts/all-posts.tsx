@@ -2,8 +2,8 @@ import classes   from './all-posts.module.css';
 import PostsGrid from './posts-grid';
 
 export type Post = {
-  posts:any[];
-  slug: string
+  posts:any;
+  slug?: string
 }
 function AllPosts(props: Post) {
   return (
