@@ -4,17 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="finish Section 8: Adding backend code with api routes">
+    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="start section 9">
+      <change afterPath="$PROJECT_DIR$/components/event-detail/event-content.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/event-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/event-logistics.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/event-logistics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/event-summary.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/event-summary.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/logistics-item.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/event-detail/logistics-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/event-item.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/event-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/event-list.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/event-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/events-search.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/events-search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/results-title.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/events/results-title.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/icons/address-icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/icons/arrow-right-icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/icons/date-icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/error-alert.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/error-alert.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/api-util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/events/[...slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/events/[eventId].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/events/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home-page/featured-posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-page/featured-posts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home-page/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-page/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/input/new-comment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/new-comment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/all-posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/all-posts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-detail/post-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/post-detail/post-content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/notification.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/notification.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/input/comment-list.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/comment-list.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/input/comments.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/comments.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/input/comments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/comments.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/input/new-comment.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/new-comment.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/input/newsletter-registration.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/newsletter-registration.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/input/newsletter-registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/newsletter-registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/posts-util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/contact.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/[slug].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/getting-started-with-nextjs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/mastering-javascript.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/posts/getting-started-with-nextjs/getting-started-nextjs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/posts/getting-started-with-nextjs/nextjs-file-based-routing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/posts/mastering-javascript/mastering-js-thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/site/max.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +64,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -74,13 +114,6 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="main" />
-      </list>
-    </option>
-  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/data/dummy-backend.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
@@ -103,8 +136,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.16.0",
-    "javascript.nodejs.core.library.typings.version": "16.18.36",
+    "git-widget-placeholder": "dev__WebApp__6",
     "last_opened_file_path": "/Users/haiboo/Desktop/NextJs-Project/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -114,9 +146,14 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
-    "ts.external.directory.path": "/Users/tlhai/Desktop/PRJ/NextJs-Project/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/haiboo/Desktop/NextJs-Project/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "CSS"
+    ]
   }
 }]]></component>
   <component name="ReactDesignerToolWindowState">
@@ -179,6 +216,10 @@
       <workItem from="1678330833439" duration="5720000" />
       <workItem from="1687233700566" duration="692000" />
       <workItem from="1687234988824" duration="1351000" />
+      <workItem from="1687242908741" duration="733000" />
+      <workItem from="1687317641638" duration="215000" />
+      <workItem from="1687747643666" duration="501000" />
+      <workItem from="1688525673400" duration="6024000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675741826644</created>
@@ -236,6 +277,21 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/dev_WebApp_5" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -257,21 +313,6 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/dev_WebApp_5" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -281,6 +322,7 @@
     <MESSAGE value="Prepare for using &quot;useSWR&quot; hook" />
     <MESSAGE value="cline side fetching data use useSWR" />
     <MESSAGE value="fix error of fetch data when use getStaticProp" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error of fetch data when use getStaticProp" />
+    <MESSAGE value="start section 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="start section 9" />
   </component>
 </project>

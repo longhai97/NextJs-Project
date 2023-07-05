@@ -1,8 +1,12 @@
-export type Product = {
-    id: string
-    title: string
+export type HomePageProps = {
+  events: Event[]
 }
 
-export type HomePageProps = {
-    products: Product[]
+export type Event = {
+  id: string | number
+  title: string
+  description: string
+  date: string
+  image: string
+  location: string
 }

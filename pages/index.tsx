@@ -1,48 +1,34 @@
-import {HomePageProps} from '@/type'
-import path from 'path';
-import fs from 'fs/promises';
-import Link from "next/link";
+import Head from 'next/head';
 
-const HomePage = (props: HomePageProps) => {
-    const {products} = props
+import { getFeaturedEvents } from '@/helpers/api-util';
+import EventList from '../components/events/event-list';
+import NewsletterRegistration from '../components/input/newsletter-registration';
+import { HomePageProps } from "@/type";
+
+function HomePage(props:HomePageProps) {
     return (
-        <>
-            <ul>
-                {products.map((product) => (
-                    <li key={product.id}>
-                        <Link href={`/products/${product.id}`}>
-                            {product.title}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </>
-    )
+      <div>
+          <EventList items={props.events} />
+          <Head>
+              <title>NextJS Events</title>
+              <meta
+                name='description'
+                content='Find a lot of great events that allow you to evolve...'
+              />
+          </Head>
+          <NewsletterRegistration />
+      </div>
+    );
 }
 
-export async function getStaticProps(context: any) {
-    console.log('RE-Generating...')
-
-    const filePath = path.join(process.cwd(), 'data', 'dummy-backend.json');
-    const jsonData = await fs.readFile(filePath);
-    const data = JSON.parse(jsonData.toString());
-    if (!data) {
-        return {
-            redirect: {
-                description: '/no-data'
-            }
-        }
-    }
-
-    if (data.products.length === 0) {
-        return {notFound: true}
-    }
+export async function getStaticProps() {
+    const featuredEvents = await getFeaturedEvents();
 
     return {
         props: {
-            products: data.products
+            events: featuredEvents,
         },
-        revalidate: 10,
+        revalidate: 1800,
     };
 }
 
