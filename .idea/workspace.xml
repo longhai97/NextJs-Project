@@ -4,34 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="start section 9">
-      <change afterPath="$PROJECT_DIR$/pages/api/comments/[eventId].ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/newsletter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="b200414c-932f-48bf-821f-9020d53a493d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/event-detail/event-logistics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/event-detail/event-logistics.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/events/event-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/events/event-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/input/comment-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/comment-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/input/comments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/comments.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/input/new-comment.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/new-comment.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/input/new-comment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/new-comment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/input/newsletter-registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/input/newsletter-registration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/main-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/main-navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/all-posts.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/all-posts.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-detail/post-content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-detail/post-content.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-detail/post-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-detail/post-header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-item.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/posts-grid.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/posts-grid.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/api-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/api-util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/events/[...slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/events/[...slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home-page/featured-posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-page/featured-posts.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +172,8 @@
       <workItem from="1687317641638" duration="215000" />
       <workItem from="1687747643666" duration="501000" />
       <workItem from="1688525673400" duration="6024000" />
-      <workItem from="1688614069635" duration="9129000" />
+      <workItem from="1688614069635" duration="9353000" />
+      <workItem from="1688637319066" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675741826644</created>
@@ -248,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1678273101839</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fetch dummy data to show in comment list">
+      <option name="closed" value="true" />
+      <created>1688636873101</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688636873101</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +285,7 @@
     <MESSAGE value="cline side fetching data use useSWR" />
     <MESSAGE value="fix error of fetch data when use getStaticProp" />
     <MESSAGE value="start section 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="start section 9" />
+    <MESSAGE value="fetch dummy data to show in comment list" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetch dummy data to show in comment list" />
   </component>
 </project>

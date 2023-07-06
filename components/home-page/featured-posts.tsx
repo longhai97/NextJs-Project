@@ -1,4 +1,4 @@
-import PostsGrid from '../posts/posts-grid';
+// import PostsGrid from '../posts/posts-grid';
 import classes   from './featured-posts.module.css';
 
 export type Grid = {
@@ -8,7 +8,7 @@ function FeaturedPosts(props:Grid) {
   return (
     <section className={classes.latest}>
       <h2>Featured Posts</h2>
-      <PostsGrid posts={props.posts} />
+      {/*<PostsGrid posts={props.posts} />*/}
     </section>
   );
 }
