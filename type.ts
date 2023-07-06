@@ -10,3 +10,14 @@ export type Event = {
   image: string
   location: string
 }
+
+export type Comment = {
+  id: string | number
+  email: string,
+  name: string,
+  text: string,
+}
+
+export type CommentList = {
+  items: Comment[]
+}

@@ -14,7 +14,7 @@ function FilteredEventsPage() {
   const filterData: string | string[] | undefined = router.query.slug;
 
   const { data, error } = useSWR(
-    'https://nextjs-course-c81cc-default-rtdb.firebaseio.com/events.json'
+    'https://nextjs-course-b0a08-default-rtdb.asia-southeast1.firebasedatabase.app/events.json'
   );
 
   useEffect(() => {

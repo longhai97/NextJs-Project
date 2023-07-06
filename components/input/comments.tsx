@@ -1,29 +1,47 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import CommentList from './comment-list';
-import NewComment from './new-comment';
-import classes from './comments.module.css';
+import NewComment  from './new-comment';
+import classes     from './comments.module.css';
+import { Comment } from '@/type'
 
-function Comments(props:any) {
+function Comments(props: any) {
   const { eventId } = props;
 
-  const [showComments, setShowComments] = useState(false);
+  const [ showComments, setShowComments ] = useState(false);
+  const [ comments, setComments ]         = useState<Comment[]>([]);
+  useEffect(() => {
+    if (showComments) {
+      fetch(`/api/comments/${ eventId }`)
+        .then(response => response.json())
+        .then((data) => {
+          setComments(data.comments);
+        })
+    }
+  }, [ showComments ]);
 
   function toggleCommentsHandler() {
     setShowComments((prevStatus) => !prevStatus);
   }
 
-  function addCommentHandler(commentData:any) {
+  function addCommentHandler(commentData: Comment) {
     // send data to API
+    fetch(`/api/comments/${ eventId }`, {
+      method: 'POST',
+      body: JSON.stringify(commentData),
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(response => response.json())
+      .then(data => console.log('ADD_COMMENT: ', data))
   }
 
   return (
-    <section className={classes.comments}>
-      <button onClick={toggleCommentsHandler}>
-        {showComments ? 'Hide' : 'Show'} Comments
+    <section className={ classes.comments }>
+      <button onClick={ toggleCommentsHandler }>
+        { showComments ? 'Hide' : 'Show' } Comments
       </button>
-      {showComments && <NewComment onAddComment={addCommentHandler} />}
-      {showComments && <CommentList />}
+      { showComments && <NewComment onAddComment={ addCommentHandler }/> }
+      { showComments && <CommentList items={ comments }/> }
     </section>
   );
 }
